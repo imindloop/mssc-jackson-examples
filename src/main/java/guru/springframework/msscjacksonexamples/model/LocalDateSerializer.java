@@ -3,11 +3,13 @@ package guru.springframework.msscjacksonexamples.model;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+@JsonSerialize
 public class LocalDateSerializer extends JsonSerializer<LocalDate> {
 
 
